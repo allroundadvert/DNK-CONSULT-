@@ -13,7 +13,7 @@ body{
     color:#f5d76e;
 }
 
-/* ===== HEADER ===== */
+/* ===== HEADER IMAGE ===== */
 header{
     text-align:center;
     padding:15px;
@@ -33,6 +33,21 @@ header h1{
 header p{
     color:#fff;
     font-size:14px;
+}
+
+/* ===== VIDEO SECTION ===== */
+.video-container{
+    width:100%;
+    height:240px;
+    overflow:hidden;
+    border-top:2px solid #f5d76e;
+    border-bottom:2px solid #f5d76e;
+}
+
+.video-container video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 /* ===== BUTTONS ===== */
@@ -64,7 +79,6 @@ header p{
     height:170px;
     margin:0 12px;
     border:2px solid #f5d76e;
-    background:#000;
 }
 
 @keyframes move{
@@ -82,9 +96,7 @@ header p{
 
 .gallery img{
     width:100%;
-    height:auto;
     border:2px solid #f5d76e;
-    background:#000;
 }
 
 /* ===== FORM ===== */
@@ -143,16 +155,15 @@ footer{
 
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- ===== TOP IMAGE HEADER ===== -->
 <header>
-
 <img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/refs/heads/main/Screenshot_20260304-091851.jpg" alt="DNK CONSULT">
 
 <h1>DNK CONSULT</h1>
 <p><b>DEALERS IN QUALITY BUILDING MATERIALS</b></p>
 
 <p>
-Wall & Floor Tiles • Bricks • Granite • Marble • Interior Décor
+Tiles • Bricks • Granite • Marble • Interior Décor
 </p>
 
 <p>
@@ -164,8 +175,14 @@ By Bonsac Junction, Asaba–Benin Expressway, Asaba
 <a href="tel:08037947194">CALL</a>
 <a href="https://wa.me/2348037947194">WHATSAPP</a>
 </div>
-
 </header>
+
+<!-- ===== VIDEO UNDER TOP IMAGE ===== -->
+<div class="video-container">
+<video autoplay muted loop playsinline>
+    <source src="dnk-video.mp4" type="video/mp4">
+</video>
+</div>
 
 <!-- ===== MOVING IMAGES ===== -->
 <div class="moving-slider">
