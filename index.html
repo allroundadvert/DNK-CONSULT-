@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DNK CONSULT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#000;
+    color:#f5d76e;
+}
+
+/* ===== HEADER ===== */
+header{
+    text-align:center;
+    padding:15px;
+}
+
+header img{
+    width:100%;
+    max-height:260px;
+    object-fit:contain;
+    background:#000;
+}
+
+header h1{
+    margin:10px 0 5px;
+}
+
+header p{
+    color:#fff;
+    font-size:14px;
+}
+
+/* ===== BUTTONS ===== */
+.buttons a{
+    display:inline-block;
+    margin:6px;
+    padding:10px 16px;
+    background:#f5d76e;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+/* ===== MOVING SLIDER ===== */
+.moving-slider{
+    overflow:hidden;
+    background:#000;
+    padding:15px 0;
+}
+
+.moving-track{
+    display:flex;
+    width:max-content;
+    animation: move 6s linear infinite alternate;
+}
+
+.moving-track img{
+    height:170px;
+    margin:0 12px;
+    border:2px solid #f5d76e;
+    background:#000;
+}
+
+@keyframes move{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-40%); }
+}
+
+/* ===== STATIC GALLERY ===== */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:12px;
+    padding:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:auto;
+    border:2px solid #f5d76e;
+    background:#000;
+}
+
+/* ===== FORM ===== */
+.container{
+    padding:15px;
+}
+
+form{
+    background:#111;
+    border:2px solid #f5d76e;
+    padding:20px;
+    border-radius:8px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input, select{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border-radius:4px;
+    border:none;
+}
+
+button{
+    width:100%;
+    margin-top:18px;
+    padding:12px;
+    background:#f5d76e;
+    color:#000;
+    border:none;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* ===== MAP ===== */
+.map{
+    margin:20px;
+    border:2px solid #f5d76e;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:15px;
+    color:#fff;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+
+<!-- TOP IMAGE WILL BE REPLACED WHEN YOU SEND IT -->
+<img src="TOP-IMAGE-HERE.jpg" alt="DNK CONSULT">
+
+<h1>DNK CONSULT</h1>
+<p><b>DEALERS IN QUALITY BUILDING MATERIALS</b></p>
+
+<p>
+Wall & Floor Tiles • Bricks • Granite • Marble • Interior Décor
+</p>
+
+<p>
+029, 027 & 032 Peace Plaza,<br>
+By Bonsac Junction, Asaba–Benin Expressway, Asaba
+</p>
+
+<div class="buttons">
+<a href="tel:08037947194">CALL</a>
+<a href="https://wa.me/2348037947194">WHATSAPP</a>
+</div>
+
+</header>
+
+<!-- ===== MOVING IMAGES (2 ONLY) ===== -->
+<div class="moving-slider">
+<div class="moving-track">
+<img src="image1.jpg">
+<img src="image2.jpg">
+</div>
+</div>
+
+<!-- ===== STATIC GALLERY (COLUMNS UNCHANGED) ===== -->
+<div class="gallery">
+<img src="gallery1.jpg">
+<img src="gallery2.jpg">
+<img src="gallery3.jpg">
+<img src="gallery4.jpg">
+</div>
+
+<!-- ===== CUSTOMER FORM ===== -->
+<div class="container">
+<form onsubmit="sendWhatsApp(); return false;">
+
+<label>Customer Name</label>
+<input type="text" id="cName" required>
+
+<label>Phone Number</label>
+<input type="tel" id="cPhone" required>
+
+<label>Customer Address</label>
+<input type="text" id="cAddress" required>
+
+<label>Select Product</label>
+<select id="product">
+<option>Wall Tiles</option>
+<option>Floor Tiles</option>
+<option>Bricks</option>
+<option>Granite</option>
+<option>Marble</option>
+<option>Interior Decor</option>
+</select>
+
+<label>Home Delivery</label>
+<select id="delivery">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<button>Submit via WhatsApp</button>
+
+</form>
+</div>
+
+<!-- ===== MAP ===== -->
+<div class="map">
+<iframe 
+src="https://www.google.com/maps?q=Asaba%20Benin%20Expressway&output=embed"
+width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+</iframe>
+</div>
+
+<footer>
+© DNK CONSULT – Trusted Dealers in Quality Building Materials
+</footer>
+
+<script>
+function sendWhatsApp(){
+    const name = document.getElementById("cName").value;
+    const phone = document.getElementById("cPhone").value;
+    const address = document.getElementById("cAddress").value;
+    const product = document.getElementById("product").value;
+    const delivery = document.getElementById("delivery").value;
+
+    const message = `Hello DNK CONSULT!%0A%0AI would like to make an enquiry:%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Address: ${address}%0A
+Product: ${product}%0A
+Home Delivery: ${delivery}%0A%0AThank you.`;
+
+    window.open(`https://wa.me/2348037947194?text=${message}`, "_blank");
+}
+</script>
+
+</body>
+</html>
