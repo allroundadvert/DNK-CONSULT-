@@ -2,258 +2,121 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>DNK CONSULT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<title>INNOSON ELECTRONICS PLAZA</title>
 <style>
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#000;
-    color:#f5d76e;
-}
-
-/* ===== HEADER IMAGE ===== */
-header{
-    text-align:center;
-    padding:15px;
-}
-
-header img{
-    width:100%;
-    max-height:260px;
-    object-fit:contain;
-    background:#000;
-}
-
-header h1{
-    margin:10px 0 5px;
-}
-
-header p{
-    color:#fff;
-    font-size:14px;
-}
-
-/* ===== MOVING SLIDER (2 IMAGES) ===== */
-.moving-slider{
-    overflow:hidden;
-    background:#000;
-    padding:15px 0;
-}
-
-.moving-track{
-    display:flex;
-    width:max-content;
-    animation: move 6s linear infinite alternate;
-}
-
-.moving-track img{
-    height:170px;
-    margin:0 12px;
-    border:2px solid #f5d76e;
-}
-
-@keyframes move{
-    0% { transform:translateX(0); }
-    50% { transform:translateX(-50px); }
-    100% { transform:translateX(0); }
-}
-
-/* ===== STATIC GALLERY ===== */
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:12px;
-    padding:15px;
-}
-
-.gallery img{
-    width:100%;
-    border:2px solid #f5d76e;
-}
-
-/* ===== BUTTONS ===== */
-.buttons a{
-    display:inline-block;
-    margin:6px;
-    padding:10px 16px;
-    background:#f5d76e;
-    color:#000;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:5px;
-}
-
-/* ===== FORM ===== */
-.container{
-    padding:15px;
-}
-
-form{
-    background:#111;
-    border:2px solid #f5d76e;
-    padding:20px;
-    border-radius:8px;
-}
-
-label{
-    display:block;
-    margin-top:12px;
-    font-weight:bold;
-}
-
-input, select{
-    width:100%;
-    padding:8px;
-    margin-top:5px;
-    border-radius:4px;
-    border:none;
-}
-
-button{
-    width:100%;
-    margin-top:18px;
-    padding:12px;
-    background:#f5d76e;
-    color:#000;
-    border:none;
-    font-weight:bold;
-    border-radius:5px;
-    cursor:pointer;
-}
-
-/* ===== MAP ===== */
-.map{
-    margin:20px;
-    border:2px solid #f5d76e;
-}
-
-/* ===== FOOTER ===== */
-footer{
-    text-align:center;
-    padding:15px;
-    color:#fff;
-    font-size:13px;
-}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff8e1; /* Gold theme similar to IYKVIN FLEX TECHNICAL VENTURES */
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #FFD700;
+        text-align: center;
+        padding: 20px;
+    }
+    header h1 {
+        margin: 0;
+        color: #000;
+    }
+    nav {
+        background-color: #FFC107;
+        padding: 10px;
+    }
+    nav a {
+        margin: 0 15px;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    .image-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    /* Moving animation for first two images */
+    .move-left-right {
+        animation: moveLR 4s ease-in-out infinite alternate;
+    }
+    @keyframes moveLR {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(20px); }
+    }
+    .product-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    .product-table th, .product-table td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+    .product-table th {
+        background-color: #FFD700;
+    }
+    footer {
+        background-color: #FFC107;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+    }
 </style>
 </head>
 <body>
 
-<!-- ===== TOP IMAGE HEADER ===== -->
 <header>
-<img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/refs/heads/main/Screenshot_20260304-091851.jpg" alt="DNK CONSULT">
-<h1>DNK CONSULT</h1>
-<p><b>DEALERS IN QUALITY BUILDING MATERIALS</b></p>
-<p>Tiles • Bricks • Granite • Marble • Interior Décor</p>
-<p>029, 027 & 032 Peace Plaza,<br>By Bonsac Junction, Asaba–Benin Expressway, Asaba</p>
-
-<div class="buttons">
-<a href="tel:08037947194">CALL</a>
-<a href="https://wa.me/2348037947194">WHATSAPP</a>
-</div>
+    <h1>INNOSON ELECTRONICS PLAZA</h1>
 </header>
 
-<!-- ===== MOVING 2 IMAGES ===== -->
-<div class="moving-slider">
-  <div class="moving-track">
-    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-124923.jpg" alt="Tile1">
-    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-124949.jpg" alt="Tile2">
-  </div>
-</div>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+</nav>
 
-<!-- ===== STATIC GALLERY (26 pictures) ===== -->
-<div class="gallery">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125024.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125050.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125100.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125148.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125317.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125347.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125410.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125516.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125605.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125640.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130003.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130020.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130130.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130347.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130549.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131035.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131107.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131124.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131147.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131416.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131903.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-132245.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-132339.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250917-223143.jpg">
-</div>
-
-<!-- ===== FORM ===== -->
-<div class="container">
-<form onsubmit="sendWhatsApp(); return false;">
-
-<label>Customer Name</label>
-<input type="text" id="cName" required>
-
-<label>Phone Number</label>
-<input type="tel" id="cPhone" required>
-
-<label>Customer Address</label>
-<input type="text" id="cAddress" required>
-
-<label>Select Product</label>
-<select id="product">
-<option>Wall Tiles</option>
-<option>Floor Tiles</option>
-<option>Bricks</option>
-<option>Granite</option>
-<option>Marble</option>
-<option>Interior Decor</option>
-</select>
-
-<label>Home Delivery</label>
-<select id="delivery">
-<option>Yes</option>
-<option>No</option>
-</select>
-
-<button>Submit via WhatsApp</button>
-
-</form>
-</div>
-
-<!-- ===== MAP ===== -->
-<div class="map">
-<iframe 
-src="https://www.google.com/maps?q=Asaba%20Benin%20Expressway&output=embed"
-width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
-</iframe>
+<!-- Image Grid -->
+<div class="image-grid">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-124923.jpg" class="move-left-right" alt="Image 1">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-124949.jpg" class="move-left-right" alt="Image 2">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125024.jpg" alt="Image 3">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125050.jpg" alt="Image 4">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125100.jpg" alt="Image 5">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125148.jpg" alt="Image 6">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125317.jpg" alt="Image 7">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125347.jpg" alt="Image 8">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125410.jpg" alt="Image 9">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125516.jpg" alt="Image 10">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125605.jpg" alt="Image 11">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125640.jpg" alt="Image 12">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130003.jpg" alt="Image 13">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130020.jpg" alt="Image 14">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130130.jpg" alt="Image 15">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130347.jpg" alt="Image 16">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130549.jpg" alt="Image 17">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131035.jpg" alt="Image 18">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131107.jpg" alt="Image 19">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131124.jpg" alt="Image 20">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131147.jpg" alt="Image 21">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131416.jpg" alt="Image 22">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131903.jpg" alt="Image 23">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-132245.jpg" alt="Image 24">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-132339.jpg" alt="Image 25">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250917-223143.jpg" alt="Image 26">
 </div>
 
 <footer>
-© DNK CONSULT – Trusted Dealers in Quality Building Materials
+    <p>&copy; 2026 INNOSON ELECTRONICS PLAZA. All rights reserved.</p>
 </footer>
-
-<script>
-function sendWhatsApp(){
-    const name = document.getElementById("cName").value;
-    const phone = document.getElementById("cPhone").value;
-    const address = document.getElementById("cAddress").value;
-    const product = document.getElementById("product").value;
-    const delivery = document.getElementById("delivery").value;
-
-    const message = `Hello DNK CONSULT!%0A%0AI would like to make an enquiry:%0A
-Name: ${name}%0A
-Phone: ${phone}%0A
-Address: ${address}%0A
-Product: ${product}%0A
-Home Delivery: ${delivery}%0A%0AThank you.`;
-
-    window.open(`https://wa.me/2348037947194?text=${message}`, "_blank");
-}
-</script>
 
 </body>
 </html>
