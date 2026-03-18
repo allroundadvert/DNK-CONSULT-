@@ -4,211 +4,240 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CLOVER HOME MARBLES AND GRANITES LTD.</title>
+
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #fff8e1; /* Gold theme */
-        margin: 0;
-        padding: 0;
-        color: #333;
-    }
-    header img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    .container {
-        max-width: 1000px;
-        margin: 20px auto;
-        padding: 0 20px;
-    }
-    h1, h2, h3 {
-        color: #b8860b;
-    }
-    .info-section {
-        margin-bottom: 30px;
-    }
-    .info-section ul {
-        list-style: none;
-        padding: 0;
-    }
-    .info-section ul li {
-        margin-bottom: 5px;
-    }
-    form {
-        background: #fff3cd;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    form .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 15px;
-    }
-    form .row .col {
-        flex: 1;
-        min-width: 200px;
-        margin-right: 10px;
-    }
-    form label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-    form input, form select {
-        width: 100%;
-        padding: 8px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        margin-bottom: 5px;
-    }
-    .checkbox-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-    .checkbox-grid label {
-        font-weight: normal;
-    }
-    .buttons {
-        display: flex;
-        gap: 15px;
-        margin-top: 15px;
-    }
-    .buttons button, .buttons a {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    .submit-btn {
-        background-color: #b8860b;
-    }
-    .whatsapp-btn {
-        background-color: #25D366;
-    }
-    .email-btn {
-        background-color: #0072c6;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e1;
+    margin: 0;
+}
+
+/* Header Image */
+header img {
+    width: 100%;
+    display: block;
+}
+
+/* Navigation */
+nav {
+    background: #FFD700;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.image-grid img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Animation */
+.move {
+    animation: moveLR 3s infinite alternate;
+}
+@keyframes moveLR {
+    from { transform: translateX(0); }
+    to { transform: translateX(20px); }
+}
+
+/* Content */
+.container {
+    padding: 20px;
+}
+h1, h2 {
+    color: #b8860b;
+}
+
+/* Form */
+form {
+    background: #fff3cd;
+    padding: 20px;
+    border-radius: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.col {
+    flex: 1;
+    min-width: 200px;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Checkbox grid */
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 15px;
+}
+button, .btn {
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.submit { background: #b8860b; }
+.whatsapp { background: #25D366; }
+.email { background: #0072c6; }
 </style>
 </head>
+
 <body>
 
 <header>
-    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-124923.jpg" alt="Clover Home Marbles Header">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-124923.jpg">
 </header>
 
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">Contact</a>
+<a href="#">About</a>
+</nav>
+
+<!-- Images (last one removed) -->
+<div class="image-grid">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-124949.jpg" class="move">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125024.jpg" class="move">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125050.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125100.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125148.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125317.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125347.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125410.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125516.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125605.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125640.jpg">
+</div>
+
 <div class="container">
-    <!-- Company Info -->
-    <div class="info-section">
-        <h1>CLOVER HOME MARBLES AND GRANITES LTD.</h1>
-        <p><strong>RC NO:</strong> 8344242</p>
 
-        <h2>Product Description</h2>
-        <p>Marbles and Granites Slab/Floor Tiles Supplier</p>
+<h1>CLOVER HOME MARBLES AND GRANITES LTD.</h1>
+<p><b>RC NO:</b> 8344242</p>
 
-        <h2>Services</h2>
-        <ul>
-            <li>Marbles/Granites Slab & Floor Tiles</li>
-            <li>Kitchen Counter-tops</li>
-            <li>Staircase</li>
-            <li>Tombstone</li>
-            <li>Write-ups</li>
-            <li>Pulpit</li>
-            <li>General Contractors</li>
-        </ul>
+<h2>Product Description</h2>
+<p>Marbles and Granites Slab/Floor Tiles Supplier</p>
 
-        <h2>Benefits</h2>
-        <ul>
-            <li>Quality Products</li>
-            <li>Excellent Service</li>
-        </ul>
+<h2>Services</h2>
+<ul>
+<li>Marbles/Granites Slab & Floor Tiles</li>
+<li>Kitchen Counter-tops</li>
+<li>Staircase</li>
+<li>Tombstone</li>
+<li>Write-ups</li>
+<li>Pulpit</li>
+<li>General Contractors</li>
+</ul>
 
-        <h2>Contact Information</h2>
-        <ul>
-            <li><strong>Location:</strong> Besides National Block Industry, Along Benin/Onitsha Express Way, Bonsaac, Asaba, Delta State.</li>
-            <li><strong>Phone Numbers:</strong> +234 913 281 3864, +234 916 317 8828</li>
-            <li><strong>Email:</strong> cloverhome102@gmail.com</li>
-        </ul>
-    </div>
+<h2>Benefits</h2>
+<ul>
+<li>Quality Products</li>
+<li>Excellent Service</li>
+</ul>
 
-    <!-- Customer Form -->
-    <form id="customerForm">
-        <h2>Customer Inquiry Form</h2>
+<h2>Contact</h2>
+<p>Besides National Block Industry, Along Benin/Onitsha Express Way, Bonsaac, Asaba, Delta State.</p>
+<p>+234 913 281 3864 | +234 916 317 8828</p>
+<p>cloverhome102@gmail.com</p>
 
-        <div class="row">
-            <div class="col">
-                <label for="name">Name</label>
-                <input type="text" id="name" required>
-            </div>
-            <div class="col">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" required>
-            </div>
-        </div>
+<form id="form">
 
-        <div class="row">
-            <div class="col">
-                <label for="location">Location</label>
-                <input type="text" id="location" required>
-            </div>
-            <div class="col">
-                <label for="delivery">Coming for Goods or Home Delivery?</label>
-                <select id="delivery" required>
-                    <option value="">Select</option>
-                    <option value="Goods">Coming for Goods</option>
-                    <option value="Home Delivery">Home Delivery</option>
-                </select>
-            </div>
-        </div>
+<div class="row">
+<div class="col">
+<label>Name</label>
+<input type="text" id="name" required>
+</div>
 
-        <h3>Select Products & Services</h3>
-        <div class="checkbox-grid">
-            <label><input type="checkbox" name="services" value="Marbles/Granites Slab & Floor Tiles"> Marbles/Granites Slab & Floor Tiles</label>
-            <label><input type="checkbox" name="services" value="Kitchen Counter-tops"> Kitchen Counter-tops</label>
-            <label><input type="checkbox" name="services" value="Staircase"> Staircase</label>
-            <label><input type="checkbox" name="services" value="Tombstone"> Tombstone</label>
-            <label><input type="checkbox" name="services" value="Write-ups"> Write-ups</label>
-            <label><input type="checkbox" name="services" value="Pulpit"> Pulpit</label>
-            <label><input type="checkbox" name="services" value="General Contractors"> General Contractors</label>
-        </div>
+<div class="col">
+<label>Phone</label>
+<input type="text" id="phone" required>
+</div>
+</div>
 
-        <div class="buttons">
-            <button type="submit" class="submit-btn">Submit</button>
-            <a href="https://wa.me/2349132813864?text=Hello%20Clover%20Home%20Marbles%20and%20Granites,%20I%20am%20interested%20in%20your%20products%20and%20services." target="_blank" class="whatsapp-btn">WhatsApp</a>
-            <a href="mailto:cloverhome102@gmail.com" class="email-btn">Email</a>
-        </div>
-    </form>
+<div class="row">
+<div class="col">
+<label>Location</label>
+<input type="text" id="location" required>
+</div>
+
+<div class="col">
+<label>Goods or Delivery</label>
+<select id="delivery" required>
+<option value="">Select</option>
+<option>Coming for Goods</option>
+<option>Home Delivery</option>
+</select>
+</div>
+</div>
+
+<h3>Select Services</h3>
+<div class="checkbox-grid">
+<label><input type="checkbox" value="Marbles"> Marbles/Granites</label>
+<label><input type="checkbox" value="Kitchen"> Kitchen Counter-tops</label>
+<label><input type="checkbox" value="Staircase"> Staircase</label>
+<label><input type="checkbox" value="Tombstone"> Tombstone</label>
+<label><input type="checkbox" value="Write-ups"> Write-ups</label>
+<label><input type="checkbox" value="Pulpit"> Pulpit</label>
+<label><input type="checkbox" value="Contract"> General Contractors</label>
+</div>
+
+<div class="buttons">
+<button class="submit">Submit</button>
+
+<a class="btn whatsapp" target="_blank"
+href="https://wa.me/2349132813864?text=Hello%20Clover%20Home%20Marbles%20and%20Granites%2C%20I%20am%20interested%20in%20your%20services.%20Please%20assist%20me.">
+WhatsApp
+</a>
+
+<a class="btn email" href="mailto:cloverhome102@gmail.com">Email</a>
+</div>
+
+</form>
+
 </div>
 
 <script>
-document.getElementById('customerForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const location = document.getElementById('location').value;
-    const delivery = document.getElementById('delivery').value;
-    const services = Array.from(document.querySelectorAll('input[name="services"]:checked')).map(cb => cb.value).join(', ');
+document.getElementById("form").addEventListener("submit", function(e){
+e.preventDefault();
 
-    if(!name || !phone || !location || !delivery){
-        alert("Please fill in all required fields.");
-        return;
-    }
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let location = document.getElementById("location").value;
+let delivery = document.getElementById("delivery").value;
 
-    const message = `Customer Inquiry:\nName: ${name}\nPhone: ${phone}\nLocation: ${location}\nDelivery: ${delivery}\nServices/Products: ${services}`;
-    alert("Form submitted successfully!\n\n" + message);
+let services = [...document.querySelectorAll("input[type=checkbox]:checked")]
+.map(el => el.value).join(", ");
 
-    // Optionally, open WhatsApp pre-filled with message
-    const whatsappNumber = "2349132813864";
-    const whatsappMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, "_blank");
+let msg = `Hello Clover Home,%0AName: ${name}%0APhone: ${phone}%0ALocation: ${location}%0ADelivery: ${delivery}%0AServices: ${services}`;
 
-    // Reset form
-    this.reset();
+window.open(`https://wa.me/2349132813864?text=${msg}`, "_blank");
 });
 </script>
 
