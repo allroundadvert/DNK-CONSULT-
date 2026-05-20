@@ -17,6 +17,19 @@ body {
     --gold:#d4af37;
 }
 
+/* TOP IMAGE */
+.hero-image{
+    width:100%;
+    border-bottom:3px solid var(--gold);
+}
+
+.hero-image img{
+    width:100%;
+    max-height:320px;
+    object-fit:contain;
+    display:block;
+}
+
 /* HEADER */
 header {
     background: linear-gradient(90deg, #111, var(--gold), #111);
@@ -36,6 +49,24 @@ header p {
     margin: 5px 0;
     font-size: 14px;
     color:#111;
+}
+
+/* IMAGES GRID */
+.gallery {
+    width: 95%;
+    max-width: 1000px;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid var(--gold);
+    border-radius: 5px;
 }
 
 /* CONTAINER */
@@ -115,11 +146,35 @@ h2{
 
 <body>
 
+<!-- TOP IMAGE -->
+<div class="hero-image">
+    <img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/93e0869ec546c758a584ab94c8d1c3180078aba5/1779269640833.png">
+</div>
+
 <header>
     <h1>DIVINE DE MEKUS ENTERPRISES LTD</h1>
     <p>General Contractors | Accredited Dealers on Quality PVC Pipes & Fittings | Sanitary Wares | Plumbing and Bore Hole Materials</p>
     <p><strong>Address:</strong> C4 and 670 International Building Materials Market, Dei Dei Abuja</p>
 </header>
+
+<!-- IMAGE GRID (2 BY 2 STYLE) -->
+<div class="gallery">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/93e0869ec546c758a584ab94c8d1c3180078aba5/Screenshot_20260520-102431.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/93e0869ec546c758a584ab94c8d1c3180078aba5/Screenshot_20260520-102446.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/93e0869ec546c758a584ab94c8d1c3180078aba5/Screenshot_20260520-102457.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/93e0869ec546c758a584ab94c8d1c3180078aba5/Screenshot_20260520-102508.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/93e0869ec546c758a584ab94c8d1c3180078aba5/Screenshot_20260520-102548.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/93e0869ec546c758a584ab94c8d1c3180078aba5/Screenshot_20260520-102600.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/93e0869ec546c758a584ab94c8d1c3180078aba5/Screenshot_20260520-102617.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/93e0869ec546c758a584ab94c8d1c3180078aba5/Screenshot_20260520-102713.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DNK-CONSULT-/93e0869ec546c758a584ab94c8d1c3180078aba5/Screenshot_20260520-102745.jpg">
+
+</div>
 
 <div class="container">
 
@@ -170,10 +225,6 @@ h2{
     <a class="whatsapp-btn" href="https://wa.me/2347035427711" target="_blank">
         WhatsApp Us
     </a>
-
-    <div class="map">
-        <iframe src="https://www.google.com/maps?q=International+Building+Materials+Market+Dei+Dei+Abuja&output=embed"></iframe>
-    </div>
 
 </div>
 
