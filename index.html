@@ -9,12 +9,18 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f4f4;
+    background: #111;
+    color: #fff;
 }
 
+:root{
+    --gold:#d4af37;
+}
+
+/* HEADER */
 header {
-    background: #0a4a7a;
-    color: white;
+    background: linear-gradient(90deg, #111, var(--gold), #111);
+    color: #000;
     padding: 20px;
     text-align: center;
 }
@@ -22,17 +28,22 @@ header {
 header h1 {
     margin: 0;
     font-size: 24px;
+    color:#111;
+    font-weight:900;
 }
 
 header p {
     margin: 5px 0;
     font-size: 14px;
+    color:#111;
 }
 
+/* HERO */
 .hero {
     width: 100%;
     max-height: 420px;
     overflow: hidden;
+    border-bottom:3px solid var(--gold);
 }
 
 .hero img {
@@ -42,51 +53,71 @@ header p {
     object-fit: cover;
 }
 
+/* CONTAINER */
 .container {
     width: 95%;
     max-width: 1000px;
     margin: 20px auto;
-    background: white;
+    background: #1a1a1a;
     padding: 15px;
     border-radius: 10px;
+    border:1px solid var(--gold);
 }
 
+/* TABLE */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
+    overflow:hidden;
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid var(--gold);
 }
 
 th {
-    background: #0a4a7a;
-    color: white;
+    background: var(--gold);
+    color: #111;
     padding: 10px;
     text-align: left;
+    font-weight:900;
 }
 
 td {
     padding: 10px;
+    background:#111;
 }
 
 input {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
+    background:#000;
+    border:1px solid var(--gold);
+    color:#fff;
 }
 
+/* BUTTON */
 .whatsapp-btn {
     display: inline-block;
-    background: #25D366;
-    color: white;
+    background: var(--gold);
+    color: #111;
     padding: 12px 20px;
     margin-top: 15px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    border:2px solid #000;
+}
+
+.whatsapp-btn:hover{
+    background:#f1d27a;
+}
+
+/* FOOT NOTE STYLE */
+h2{
+    color:var(--gold);
 }
 </style>
 </head>
