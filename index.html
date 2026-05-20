@@ -38,21 +38,6 @@ header p {
     color:#111;
 }
 
-/* HERO */
-.hero {
-    width: 100%;
-    max-height: 420px;
-    overflow: hidden;
-    border-bottom:3px solid var(--gold);
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
 /* CONTAINER */
 .container {
     width: 95%;
@@ -69,7 +54,6 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    overflow:hidden;
 }
 
 table, th, td {
@@ -111,13 +95,20 @@ input {
     border:2px solid #000;
 }
 
-.whatsapp-btn:hover{
-    background:#f1d27a;
-}
-
-/* FOOT NOTE STYLE */
 h2{
     color:var(--gold);
+}
+
+/* MAP */
+.map {
+    margin-top: 25px;
+    border: 2px solid var(--gold);
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
 }
 </style>
 </head>
@@ -129,10 +120,6 @@ h2{
     <p>General Contractors | Accredited Dealers on Quality PVC Pipes & Fittings | Sanitary Wares | Plumbing and Bore Hole Materials</p>
     <p><strong>Address:</strong> C4 and 670 International Building Materials Market, Dei Dei Abuja</p>
 </header>
-
-<div class="hero">
-    <img src="hero.jpg" alt="Company Banner">
-</div>
 
 <div class="container">
 
@@ -183,6 +170,10 @@ h2{
     <a class="whatsapp-btn" href="https://wa.me/2347035427711" target="_blank">
         WhatsApp Us
     </a>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps?q=International+Building+Materials+Market+Dei+Dei+Abuja&output=embed"></iframe>
+    </div>
 
 </div>
 
